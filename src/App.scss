@@ -1,0 +1,184 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.collapse {
+  display: none
+}
+
+.collapse.in {
+  display: block;
+}
+
+.btnCollapse{
+  margin: 10px;
+  position: absolute;
+  right: 20px;
+}
+.App-link {
+  color: #61dafb;
+}
+.container{
+  max-width: 1000px;
+  width: 100%;
+}
+.warning{
+  margin-top: 10px;
+  color: brown;
+}
+.artistList{
+  float: left;
+  width: 100%;
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 50px;
+
+  img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    float: left;
+  }
+ 
+  .name{
+    float: left;
+    margin-left: 15px;
+    font-weight: 600;
+    max-width: 170px;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; 
+    cursor: pointer;
+   // -webkit-box-orient: vertical;
+  }
+}
+.artistInfo{
+  max-width: 550px; 
+  float: left;
+  padding: 30px;
+  img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    float: left;
+  }
+  .info{
+    float: left;
+    margin-left: 20px;
+    text-align: left;
+    .name{
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .cat{
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .streams{
+      float: left;
+      background: #983256;
+      color: whitesmoke;
+      padding: 10px;
+      margin-top: 20px;
+      .title{
+        font-weight: 600;
+        font-weight: 14px;
+      }
+      .result{
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.section-searchArtist{
+  position: absolute;
+  right: 0;
+  background: whitesmoke;
+  width: 300px;
+  padding: 30px;
+  padding-bottom: 50px;
+}
+.line-chart
+{
+    border: 1px solid lightgray;
+    float: left;
+    width: 100%;
+}
+.metricsContainer{
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+
+  .form-control{
+    width: fit-content;
+    margin: auto;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.btn-sm{
+  border-radius: unset;
+}
+.btn-container{
+  margin-bottom: 15px;
+}
+// Line chart css
+/*
+svg {
+  fill: #000;
+  fill-opacity: 0.3;
+}
+
+path {
+  stroke: steelblue;
+  stroke-width: 2px;
+  fill: none;
+}
+
+.axis {
+  stroke: #000;
+}
+
+.axis-labels text {
+  fill: #000;
+  fill-opacity: 0.9;
+  font-size: 12px;
+  text-anchor: middle;
+}
+
+.axis-labels line {
+  stroke: #000;
+}
+
+.gridline {
+  opacity: 0.2;
+}
+*/
